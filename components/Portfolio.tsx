@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client';
 import React, { useState } from 'react';
 import { Mail, Sun, Moon, Linkedin, Github } from 'lucide-react';

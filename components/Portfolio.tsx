@@ -23,7 +23,7 @@ const Portfolio = () => {
       degree: "BS in Computer Science",
       graduation: "May 2027",
       concentration: "Artificial Intelligence",
-      achievements: ["Dean's List – Spring 2023, Summer 2024"],
+      // achievements: ["Dean's List – Spring 2023, Summer 2024"],
       relevantCourses: [
         "Object Oriented Design",
         "Machine Learning and Data Mining 1",

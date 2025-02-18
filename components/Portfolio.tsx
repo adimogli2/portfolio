@@ -14,7 +14,8 @@ const Portfolio = () => {
       email: "adimogli2@gmail.com",
       phone: "(408)-858-1540",
       location: "San Jose, CA",
-      linkedin: "https://linkedin.com/in/your-linkedin"
+      linkedin: "https://linkedin.com/in/aditya-mogli",
+      github: "https://github.com/adimogli2"
     };
   
     const education = {

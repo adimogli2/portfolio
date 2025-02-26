@@ -40,8 +40,10 @@ const Portfolio = () => {
       {
         company: "Northeastern University - College of Arts, Media, and Design",
         role: "Data Analyst/Engineering Co-op",
-        description: "Engineering automated data pipelines and interactive dashboards integrating Salesforce, NUWorks, and SharePoint data sources, to reduce manual processing time by 40% and enabling data-driven decision making across the co-op team",
-        descriptionCont: "Developing a natural language interface for Snowflake database access and created comprehensive data collection surveys to measure program effectiveness, establishing critical metrics for curriculum changes and co-op search patterns"
+        bullets: [
+          "Engineering automated data pipelines and interactive dashboards integrating Salesforce, NUWorks, and SharePoint data sources, reducing manual processing time by 40% and enabling data-driven decision making across the co-op team",
+          "Developing a natural language interface for Snowflake database access and created comprehensive data collection surveys to measure program effectiveness, establishing critical metrics for curriculum changes and co-op search patterns"
+        ]
       }
     ]
   
@@ -149,12 +151,11 @@ const Portfolio = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className={`mb-4 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                      {job.description}
-                    </p>
-                    <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                      {job.descriptionCont}
-                    </p>
+                    <ul className={`list-disc list-inside ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                      {job.bullets.map((bullet, bulletIndex) => (
+                        <li key={bulletIndex} className="mb-2">{bullet}</li>
+                      ))}
+                    </ul>
                   </CardContent>
                 </Card>
               ))}
